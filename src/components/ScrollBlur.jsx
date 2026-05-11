@@ -19,29 +19,31 @@ const ScrollBlur = ({ children, className = "" }) => {
 
     // Initial state: blurred and faded
     gsap.set(splitText.chars, {
-      filter: 'blur(10px)',
+      filter: 'blur(6px)',
       opacity: 0,
-      y: 20,
-      scale: 0.9
+      y: 10,
+      willChange: 'filter, transform, opacity'
     });
 
     // Animation
     const tl = gsap.to(splitText.chars, {
       scrollTrigger: {
         trigger: textRef.current,
-        start: 'top 85%',
+        start: 'top 90%',
         end: 'bottom 60%',
-        scrub: true,
+        scrub: 0.5,
       },
       filter: 'blur(0px)',
       opacity: 1,
       y: 0,
-      scale: 1,
       stagger: {
-        amount: 0.5,
+        amount: 0.3,
         from: "start"
       },
-      ease: 'none'
+      ease: 'none',
+      onComplete: () => {
+        gsap.set(splitText.chars, { willChange: 'auto' });
+      }
     });
 
     return () => {
