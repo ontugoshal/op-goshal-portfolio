@@ -22,16 +22,16 @@ const Education = () => {
       </h2>
       <div className="flex flex-col gap-8">
         <EducationEntry
-          degree="Postgraduate in User Experience Design"
-          university="ELISAVA"
-          period="2021 — 2022"
-          description="Advanced studies in user research, information architecture, and interface design, with a focus on creating human-centered digital products."
+          degree="BSc Engineering in Civil Engineering"
+          university="Patuakhali Polytechnic Institute"
+          period="2019 — 2024"
+          description="Focused on civil engineering principles, construction technology, surveying, structural design, and infrastructure development. Developed practical and technical skills through academic projects and engineering coursework."
         />
         <EducationEntry
-          degree="Bachelor's Degree in Multimedia Design"
-          university="UNIVERSITAT RAMON LLULL"
-          period="2016 — 2020"
-          description="Focused on interaction design, web development, and digital interfaces. This program gave me the foundation to understand both the visual and technical aspects of digital products."
+          degree="Secondary School Certificate (SSC)"
+          university="Patuakhali Govt. Jubilee High School"
+          period="2014 — 2018"
+          description="Completed secondary education with a focus on science and mathematics, building a strong academic foundation and problem-solving skills."
         />
       </div>
     </section>
