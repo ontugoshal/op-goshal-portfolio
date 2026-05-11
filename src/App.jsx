@@ -40,7 +40,7 @@ function App() {
             <Skills />
           </div>
 
-          <div className="px-5 sm:px-10 py-8 border-b border-dashed border-border-subtle">
+          <div className="py-8 border-b border-dashed border-border-subtle">
             <Clients />
           </div>
 
