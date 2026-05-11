@@ -4,7 +4,7 @@ const Contact = () => {
     { label: "LinkedIn", value: "/in/opgoshal", href: "https://linkedin.com/in/opgoshal" },
     { label: "Instagram", value: "@amop_goshal", href: "https://instagram.com/amop_goshal" },
     { label: "Phone", value: "01760147482", href: "tel:01760147482" },
-    { label: "Phone", value: "01617563535", href: "tel:01617563535" }
+    { label: "WhatsApp", value: "01617563535", href: "https://wa.me/8801617563535" }
   ];
 
   return (
