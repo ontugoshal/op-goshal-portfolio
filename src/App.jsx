@@ -4,6 +4,7 @@ import Experience from './components/Experience';
 import Education from './components/Education';
 import Certifications from './components/Certifications';
 import Skills from './components/Skills';
+import Clients from './components/Clients';
 import Languages from './components/Languages';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -42,6 +43,10 @@ function App() {
 
           <div className="px-8 py-6 border-b border-dashed border-border-subtle">
             <Skills />
+          </div>
+
+          <div className="px-8 py-6 border-b border-dashed border-border-subtle">
+            <Clients />
           </div>
 
           <div className="border-b border-dashed border-border-subtle">
