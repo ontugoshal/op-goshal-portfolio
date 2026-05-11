@@ -1,17 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --color-border-subtle: #e5e7eb;
-  --color-bg-primary: #f9fafb;
-  --color-text-primary: #111827;
-  --color-text-muted: #6b7280;
-  
-  --font-inter: "Inter", sans-serif;
+  --color-bg-primary: #FAFAFA;
+  --color-bg-card: #FFFFFF;
+  --color-text-primary: #1A1A1A;
+  --color-text-secondary: #555555;
+  --color-text-muted: #888888;
+  --color-accent-green: #00D084;
+  --color-accent-purple: #8B7FFF;
+  --color-border-subtle: #E8E8E8;
+
+  --font-inter: "Inter", system-ui, sans-serif;
 }
 
 @layer base {
   body {
-    @apply font-inter bg-bg-primary text-text-primary antialiased selection:bg-black selection:text-white;
+    @apply bg-bg-primary text-text-secondary font-inter antialiased;
+    font-feature-settings: "cv02", "cv05", "cv11", "ss01";
+    letter-spacing: -0.011em;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-text-primary tracking-tight;
   }
 }
 
@@ -21,19 +33,43 @@
   }
   
   .entry-title {
-    @apply text-[19px] font-bold text-text-primary tracking-tight leading-tight;
+    @apply text-[19px] font-bold text-text-primary tracking-tight leading-snug;
   }
   
   .entry-meta {
-    @apply text-[14px] text-text-muted font-medium;
+    @apply text-[13px] font-bold text-text-muted tracking-wider uppercase;
   }
   
   .body-text {
-    @apply text-[17px] leading-[1.65] text-text-muted font-normal tracking-[-0.01em];
+    @apply text-[17px] leading-[1.65] text-text-secondary;
   }
-}
 
-/* Custom dashed border style for better visibility */
-.border-dashed {
-  border-style: dashed;
+  /* Scroll Reveal Animation */
+  @keyframes reveal-blur {
+    from {
+      filter: blur(12px);
+      opacity: 0;
+      transform: translateY(20px) scale(0.98);
+    }
+    to {
+      filter: blur(0);
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  .reveal-text {
+    animation: reveal-blur linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 30%;
+  }
+
+  /* Fallback for browsers that don't support animation-timeline */
+  @supports not (animation-timeline: view()) {
+    .reveal-text {
+      opacity: 1;
+      filter: blur(0);
+      animation: none;
+    }
+  }
 }
