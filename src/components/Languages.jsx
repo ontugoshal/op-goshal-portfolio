@@ -1,9 +1,9 @@
-const Languages = () => {
-  const languages = [
+const languages = [
     { name: "Bangla", level: "Native" },
     { name: "English", level: "Fluent" }
   ];
 
+  const Languages = () => {
   return (
     <section>
       <div className="px-5 sm:px-10 py-8 border-b border-dashed border-border-subtle">
