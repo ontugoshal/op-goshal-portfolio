@@ -3,7 +3,6 @@ const clientLogos = [
   "https://res.cloudinary.com/dweciloal/image/upload/v1778496106/fgseedgsd_dqm3vd_x3fbpm.png",
   "https://res.cloudinary.com/dweciloal/image/upload/v1778496106/dghdsh_ycmbxy_dhkq9b.png",
   "https://res.cloudinary.com/dweciloal/image/upload/v1778496106/55554_dbdp6n_on3tbb.png",
-  "https://res.cloudinary.com/dweciloal/image/upload/v1778496106/gdsgsd_rq7mnb_xu8kgs.png",
   "https://res.cloudinary.com/dweciloal/image/upload/v1778496106/2_ebhibi_dkgkth.png",
   "https://res.cloudinary.com/dweciloal/image/upload/v1778496106/06_cne8nl_divnxd.png",
   "https://res.cloudinary.com/dweciloal/image/upload/v1778496106/06_u9fbbd_zkyxhv.png",
