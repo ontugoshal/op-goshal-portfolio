@@ -26,7 +26,7 @@ const Clients = () => {
               border-dashed border-border-subtle
               ${index % 2 === 0 ? 'border-r' : ''}
               ${index < clientLogos.length - 2 ? 'border-b' : ''}
-              hover:bg-gray-50 transition-colors group aspect-square
+              hover:bg-accent-subtle transition-all duration-500 group aspect-square hover-lift cursor-pointer
             `}
           >
             <img 
