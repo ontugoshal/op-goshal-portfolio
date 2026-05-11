@@ -11,8 +11,8 @@ const clientLogos = [
 
 const Clients = () => {
   return (
-    <section>
-      <div className="px-5 sm:px-10 pb-8">
+    <section className="border-b border-dashed border-border-subtle">
+      <div className="px-5 sm:px-10 py-8">
         <h2 className="section-label">
           Clients
         </h2>

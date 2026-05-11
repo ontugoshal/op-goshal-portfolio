@@ -18,37 +18,37 @@ function App() {
         </div>
         
         {/* Profile Section */}
-        <div className="py-12 px-4 sm:px-8 flex justify-center border-b border-dashed border-border-subtle reveal-text">
+        <div className="py-12 px-4 sm:px-8 flex justify-center border-b border-dashed border-border-subtle">
           <Header showOnlyProfile={true} />
         </div>
 
         {/* Sections Wrapper */}
         <div className="flex flex-col">
-          <div className="px-5 sm:px-10 py-8 border-b border-dashed border-border-subtle reveal-text">
+          <div className="px-5 sm:px-10 py-8 border-b border-dashed border-border-subtle">
             <About />
           </div>
 
-          <div className="px-5 sm:px-10 py-8 border-b border-dashed border-border-subtle reveal-text">
+          <div className="px-5 sm:px-10 py-8 border-b border-dashed border-border-subtle">
             <Experience />
           </div>
 
-          <div className="px-5 sm:px-10 py-8 border-b border-dashed border-border-subtle reveal-text">
+          <div className="px-5 sm:px-10 py-8 border-b border-dashed border-border-subtle">
             <Certifications />
           </div>
 
-          <div className="px-5 sm:px-10 py-8 border-b border-dashed border-border-subtle reveal-text">
+          <div className="px-5 sm:px-10 py-8 border-b border-dashed border-border-subtle">
             <Skills />
           </div>
 
-          <div className="py-8 border-b border-dashed border-border-subtle reveal-text">
+          <div>
             <Clients />
           </div>
 
-          <div className="border-b border-dashed border-border-subtle reveal-text">
+          <div className="border-b border-dashed border-border-subtle">
             <Languages />
           </div>
 
-          <div className="border-b border-dashed border-border-subtle reveal-text">
+          <div className="border-b border-dashed border-border-subtle">
             <Contact />
           </div>
         </div>
