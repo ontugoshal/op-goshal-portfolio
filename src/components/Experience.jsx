@@ -1,3 +1,5 @@
+import ScrollBlur from './ScrollBlur';
+
 const ExperienceEntry = ({ title, company, period, description, icon, iconBg, iconRounded }) => (
   <div className="flex gap-5 relative pb-8 last:pb-0">
     <div className="w-8 h-8 shrink-0 mt-0.5">
@@ -22,13 +24,19 @@ const ExperienceEntry = ({ title, company, period, description, icon, iconBg, ic
         </p>
       </div>
       
-      <div className="body-text mt-5">
+      <div className="mt-5">
         {typeof description === 'string' ? (
-          <p>{description}</p>
+          <ScrollBlur className="body-text">
+            {description}
+          </ScrollBlur>
         ) : (
-          <ul className="list-disc list-outside ml-5 space-y-2.5">
+          <ul className="list-disc list-outside ml-5 space-y-2.5 body-text">
             {description.map((item, i) => (
-              <li key={i}>{item}</li>
+              <li key={i}>
+                <ScrollBlur className="inline-block">
+                  {item}
+                </ScrollBlur>
+              </li>
             ))}
           </ul>
         )}
