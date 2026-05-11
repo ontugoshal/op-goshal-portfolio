@@ -18,14 +18,14 @@ const Header = ({ showOnlyMeta, showOnlyProfile }) => {
 
   if (showOnlyMeta) {
     return (
-      <div className="flex flex-col sm:flex-row w-full h-full">
-        <div className="flex-1 flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-0 border-b sm:border-b-0 sm:border-r border-dashed border-border-subtle">
+      <div className="flex w-full h-full">
+        <div className="flex-1 flex items-center gap-2 px-3 sm:px-6 border-r border-dashed border-border-subtle overflow-hidden">
           <MapPin className="w-3.5 h-3.5 text-text-muted shrink-0" />
-          <span className="text-[10px] sm:text-[11px] font-bold text-text-muted tracking-widest uppercase truncate">Dhaka, Bangladesh</span>
+          <span className="text-[9px] sm:text-[11px] font-bold text-text-muted tracking-widest uppercase truncate">Dhaka, Bangladesh</span>
         </div>
-        <div className="flex-1 flex justify-start sm:justify-end items-center gap-2 px-4 sm:px-6 py-2 sm:py-0">
+        <div className="flex-1 flex justify-end items-center gap-2 px-3 sm:px-6 overflow-hidden">
           <Clock className="w-3.5 h-3.5 text-text-muted shrink-0" />
-          <span className="text-[10px] sm:text-[11px] font-bold text-text-muted tracking-widest uppercase">{formattedTime} GMT+6</span>
+          <span className="text-[9px] sm:text-[11px] font-bold text-text-muted tracking-widest uppercase truncate">{formattedTime} GMT+6</span>
         </div>
       </div>
     );
