@@ -18,37 +18,37 @@ function App() {
         </div>
         
         {/* Profile Section */}
-        <div className="py-12 px-4 sm:px-8 flex justify-center border-b border-dashed border-border-subtle">
+        <div className="py-12 px-4 sm:px-8 flex justify-center border-b border-dashed border-border-subtle reveal-text">
           <Header showOnlyProfile={true} />
         </div>
 
         {/* Sections Wrapper */}
         <div className="flex flex-col">
-          <div className="px-5 sm:px-10 py-8 border-b border-dashed border-border-subtle">
+          <div className="px-5 sm:px-10 py-8 border-b border-dashed border-border-subtle reveal-text">
             <About />
           </div>
 
-          <div className="px-5 sm:px-10 py-8 border-b border-dashed border-border-subtle">
+          <div className="px-5 sm:px-10 py-8 border-b border-dashed border-border-subtle reveal-text">
             <Experience />
           </div>
 
-          <div className="px-5 sm:px-10 py-8 border-b border-dashed border-border-subtle">
+          <div className="px-5 sm:px-10 py-8 border-b border-dashed border-border-subtle reveal-text">
             <Certifications />
           </div>
 
-          <div className="px-5 sm:px-10 py-8 border-b border-dashed border-border-subtle">
+          <div className="px-5 sm:px-10 py-8 border-b border-dashed border-border-subtle reveal-text">
             <Skills />
           </div>
 
-          <div className="py-8 border-b border-dashed border-border-subtle">
+          <div className="py-8 border-b border-dashed border-border-subtle reveal-text">
             <Clients />
           </div>
 
-          <div className="border-b border-dashed border-border-subtle">
+          <div className="border-b border-dashed border-border-subtle reveal-text">
             <Languages />
           </div>
 
-          <div className="border-b border-dashed border-border-subtle">
+          <div className="border-b border-dashed border-border-subtle reveal-text">
             <Contact />
           </div>
         </div>
