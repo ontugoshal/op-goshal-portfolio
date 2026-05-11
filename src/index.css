@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --color-border-subtle: #e5e7eb;
+  --color-bg-primary: #f9fafb;
+  --color-text-primary: #111827;
+  --color-text-muted: #6b7280;
+  
+  --font-inter: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply font-inter bg-bg-primary text-text-primary antialiased selection:bg-black selection:text-white;
+  }
+}
+
+@layer utilities {
+  .section-label {
+    @apply text-[11px] font-extrabold text-text-muted tracking-[0.2em] uppercase;
+  }
+  
+  .entry-title {
+    @apply text-[19px] font-bold text-text-primary tracking-tight leading-tight;
+  }
+  
+  .entry-meta {
+    @apply text-[14px] text-text-muted font-medium;
+  }
+  
+  .body-text {
+    @apply text-[17px] leading-[1.65] text-text-muted font-normal tracking-[-0.01em];
+  }
+}
+
+/* Custom dashed border style for better visibility */
+.border-dashed {
+  border-style: dashed;
+}
