@@ -1,5 +1,5 @@
-const ExperienceEntry = ({ title, company, period, description, icon, iconBg, iconRounded }) => (
-  <div className="flex gap-5 relative pb-8 last:pb-0">
+const ExperienceEntry = ({ title, company, period, description, icon, iconBg, iconRounded, index }) => (
+  <div className={`flex gap-5 relative pb-8 last:pb-0 animate-entrance stagger-${index + 1}`}>
     <div className="w-8 h-8 shrink-0 mt-0.5">
       {iconBg ? (
         <div className={`w-8 h-8 flex items-center justify-center ${iconBg} ${iconRounded || 'rounded-[6px]'}`}>
@@ -49,6 +49,7 @@ const Experience = () => {
       </h2>
       <div className="flex flex-col">
         <ExperienceEntry
+          index={0}
           title="Founder & Creative Director"
           company="CityGfx"
           period="2018 — NOW"
@@ -60,6 +61,7 @@ const Experience = () => {
           ]}
         />
         <ExperienceEntry
+          index={1}
           title="Freelance Graphic Designer"
           company="Fiverr"
           period="2016 — 2018"

@@ -18,37 +18,37 @@ function App() {
         </div>
         
         {/* Profile Section */}
-        <div className="py-12 px-4 sm:px-8 flex justify-center border-b border-dashed border-border-subtle">
+        <div className="py-12 px-4 sm:px-8 flex justify-center border-b border-dashed border-border-subtle animate-entrance">
           <Header showOnlyProfile={true} />
         </div>
 
         {/* Sections Wrapper */}
         <div className="flex flex-col">
-          <div className="px-5 sm:px-10 py-8 border-b border-dashed border-border-subtle">
+          <div className="px-5 sm:px-10 py-8 border-b border-dashed border-border-subtle reveal-on-scroll">
             <About />
           </div>
 
-          <div className="px-5 sm:px-10 py-8 border-b border-dashed border-border-subtle">
+          <div className="px-5 sm:px-10 py-8 border-b border-dashed border-border-subtle reveal-on-scroll">
             <Experience />
           </div>
 
-          <div className="px-5 sm:px-10 py-8 border-b border-dashed border-border-subtle">
+          <div className="px-5 sm:px-10 py-8 border-b border-dashed border-border-subtle reveal-on-scroll">
             <Certifications />
           </div>
 
-          <div className="px-5 sm:px-10 py-8 border-b border-dashed border-border-subtle">
+          <div className="px-5 sm:px-10 py-8 border-b border-dashed border-border-subtle reveal-on-scroll">
             <Skills />
           </div>
 
-          <div>
+          <div className="reveal-on-scroll">
             <Clients />
           </div>
 
-          <div className="border-b border-dashed border-border-subtle">
+          <div className="border-b border-dashed border-border-subtle reveal-on-scroll">
             <Languages />
           </div>
 
-          <div className="border-b border-dashed border-border-subtle">
+          <div className="border-b border-dashed border-border-subtle reveal-on-scroll">
             <Contact />
           </div>
         </div>

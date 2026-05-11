@@ -42,7 +42,23 @@
   
   /* Global Smooth Transitions */
   * {
-    @apply transition-all duration-300 ease-in-out;
+    @apply transition-all duration-500 ease-in-out;
+  }
+
+  /* Premium Entrance Animation */
+  @keyframes fade-in-up {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-entrance {
+    animation: fade-in-up 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
   }
 
   /* Enhanced Scroll Reveal Animation */
@@ -59,23 +75,29 @@
     }
   }
 
-  .reveal-text {
+  .reveal-on-scroll {
     animation: reveal-premium linear both;
     animation-timeline: view();
-    animation-range: entry 5% cover 25%;
+    animation-range: entry 5% cover 20%;
   }
+
+  /* Staggered Entrance Utilities */
+  .stagger-1 { animation-delay: 0.1s; }
+  .stagger-2 { animation-delay: 0.2s; }
+  .stagger-3 { animation-delay: 0.3s; }
+  .stagger-4 { animation-delay: 0.4s; }
+  .stagger-5 { animation-delay: 0.5s; }
 
   /* Interaction Smoothing */
   .hover-lift {
-    @apply hover:-translate-y-1 hover:shadow-sm;
+    @apply hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-orange/5;
   }
 
   /* Fallback for browsers that don't support animation-timeline */
   @supports not (animation-timeline: view()) {
-    .reveal-text {
-      opacity: 1;
-      filter: blur(0);
-      animation: none;
+    .reveal-on-scroll {
+      opacity: 0;
+      animation: fade-in-up 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
     }
   }
 }
