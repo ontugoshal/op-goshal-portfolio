@@ -1,8 +1,9 @@
 const Contact = () => {
   const contactLinks = [
-    { label: "Email", value: "mateorivas@email.com", href: "mailto:mateorivas@email.com" },
-    { label: "LinkedIn", value: "/in/mateorivas", href: "https://linkedin.com/in/mateorivas" },
-    { label: "X/Twitter", value: "@mateorivas", href: "https://twitter.com/mateorivas" }
+    { label: "Email", value: "opighoshal@gmail.com", href: "mailto:opighoshal@gmail.com" },
+    { label: "LinkedIn", value: "/in/opgoshal", href: "https://linkedin.com/in/opgoshal" },
+    { label: "Instagram", value: "@amop_goshal", href: "https://instagram.com/amop_goshal" },
+    { label: "Contact", value: "01760147482 | 01617563535", href: "tel:01760147482" }
   ];
 
   return (
