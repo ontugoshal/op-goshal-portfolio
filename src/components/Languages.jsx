@@ -1,6 +1,6 @@
 const Languages = () => {
   const languages = [
-    { name: "Spanish", level: "Native" },
+    { name: "Bangla", level: "Native" },
     { name: "English", level: "Fluent" }
   ];
 
