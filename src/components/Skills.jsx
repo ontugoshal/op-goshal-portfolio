@@ -1,4 +1,11 @@
-const skills = ["React", "TypeScript", "Next.js", "Tailwind CSS", "GraphQL", "WCAG 2.2"];
+const skills = [
+  "Sales", 
+  "Resilience", 
+  "Adaptability", 
+  "Leadership", 
+  "Strategic Planning", 
+  "Financial Literacy"
+];
 
 const brandIcons = [
   { name: "Framer", slug: "framer" },
@@ -17,7 +24,7 @@ const Skills = () => {
   return (
     <section>
       <h2 className="section-label mb-4">
-        Skills / Stack
+        Skills
       </h2>
       <div className="flex flex-wrap gap-3">
         {skills.map((skill) => (
