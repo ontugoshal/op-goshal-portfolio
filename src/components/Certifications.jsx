@@ -24,17 +24,12 @@ const Certifications = () => {
         <CertificationsEntry
           title="Google Ads Search Certification"
           issuer="Google"
-          year="2023"
+          year="2019"
         />
         <CertificationsEntry
           title="Meta Certified Digital Marketing Associate"
           issuer="Meta"
-          year="2023"
-        />
-        <CertificationsEntry
-          title="HubSpot Inbound Marketing"
-          issuer="HubSpot Academy"
-          year="2022"
+          year="2019"
         />
       </div>
     </section>
