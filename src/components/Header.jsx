@@ -21,7 +21,7 @@ const Header = ({ showOnlyMeta, showOnlyProfile }) => {
       <div className="flex w-full h-12">
         <div className="flex-1 flex items-center gap-2 px-6 border-r border-dashed border-border-subtle">
           <MapPin className="w-3.5 h-3.5 text-text-muted" />
-          <span className="text-[11px] font-bold text-text-muted tracking-widest uppercase">Barcelona, Spain</span>
+          <span className="text-[11px] font-bold text-text-muted tracking-widest uppercase">Dhaka, Bangladesh</span>
         </div>
         <div className="flex-1 flex justify-end items-center gap-2 px-6">
           <Clock className="w-3.5 h-3.5 text-text-muted" />
