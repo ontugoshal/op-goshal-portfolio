@@ -58,7 +58,7 @@ const Experience = () => {
         <ExperienceEntry
           title="Freelance Graphic Designer"
           company="Fiverr"
-          period="2017 — 2019"
+          period="2016 — 2018"
           iconBg="bg-[#1dbf73]"
           icon={<img src="https://cdn.simpleicons.org/fiverr/ffffff" className="w-4 h-4" />}
           description={[

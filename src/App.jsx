@@ -1,7 +1,6 @@
 import Header from './components/Header';
 import About from './components/About';
 import Experience from './components/Experience';
-import Education from './components/Education';
 import Certifications from './components/Certifications';
 import Skills from './components/Skills';
 import Clients from './components/Clients';
@@ -31,10 +30,6 @@ function App() {
 
           <div className="px-8 py-6 border-b border-dashed border-border-subtle">
             <Experience />
-          </div>
-
-          <div className="px-8 py-6 border-b border-dashed border-border-subtle">
-            <Education />
           </div>
 
           <div className="px-8 py-6 border-b border-dashed border-border-subtle">
