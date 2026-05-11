@@ -17,7 +17,7 @@ const Skills = () => {
         {skills.map((skill) => (
           <span 
             key={skill}
-            className="inline-block px-5 py-2.5 border border-border-subtle rounded-[8px] text-[15px] font-bold text-text-primary bg-white"
+            className="inline-block px-5 py-2.5 border border-border-subtle rounded-[8px] text-[15px] font-bold text-text-primary bg-white hover:bg-accent-subtle hover:border-accent-orange transition-colors cursor-default"
           >
             {skill}
           </span>

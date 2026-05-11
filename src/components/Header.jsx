@@ -20,11 +20,11 @@ const Header = ({ showOnlyMeta, showOnlyProfile }) => {
     return (
       <div className="flex w-full h-full">
         <div className="flex-1 flex items-center gap-2 px-3 sm:px-6 py-2.5 sm:py-0 border-r border-dashed border-border-subtle overflow-hidden">
-          <MapPin className="w-3.5 h-3.5 text-text-muted shrink-0" />
+          <MapPin className="w-3.5 h-3.5 text-accent-orange shrink-0" />
           <span className="text-[9px] sm:text-[11px] font-bold text-text-muted tracking-widest uppercase truncate">Dhaka, Bangladesh</span>
         </div>
         <div className="flex-1 flex justify-end items-center gap-2 px-3 sm:px-6 py-2.5 sm:py-0 overflow-hidden">
-          <Clock className="w-3.5 h-3.5 text-text-muted shrink-0" />
+          <Clock className="w-3.5 h-3.5 text-accent-orange shrink-0" />
           <span className="text-[9px] sm:text-[11px] font-bold text-text-muted tracking-widest uppercase truncate">{formattedTime} GMT+6</span>
         </div>
       </div>
@@ -45,7 +45,7 @@ const Header = ({ showOnlyMeta, showOnlyProfile }) => {
           OP Goshal
         </h1>
         <p className="text-[16px] text-text-muted mt-1 font-medium tracking-tight">
-          CEO & Founder at <a href="https://www.citygfx.agency" target="_blank" rel="noopener noreferrer" className="font-bold text-text-primary hover:underline">CityGfx</a>.
+          CEO & Founder at <a href="https://www.citygfx.agency" target="_blank" rel="noopener noreferrer" className="font-bold text-accent-orange hover:underline">CityGfx</a>.
         </p>
       </div>
     );
