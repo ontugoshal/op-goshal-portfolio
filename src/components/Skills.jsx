@@ -14,10 +14,10 @@ const Skills = () => {
         Skills
       </h2>
       <div className="flex flex-wrap gap-3">
-        {skills.map((skill) => (
+        {skills.map((skill, index) => (
           <span 
             key={skill}
-            className="inline-block px-5 py-2.5 border border-border-subtle rounded-[8px] text-[15px] font-bold text-text-primary bg-white hover:bg-accent-subtle hover:border-accent-orange transition-colors cursor-default"
+            className={`inline-block px-5 py-2.5 border border-border-subtle rounded-[8px] text-[15px] font-bold text-text-primary bg-white hover:bg-accent-subtle hover:border-accent-orange transition-colors cursor-default animate-entrance stagger-${(index % 5) + 1}`}
           >
             {skill}
           </span>
