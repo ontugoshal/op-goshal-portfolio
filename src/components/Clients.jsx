@@ -12,17 +12,29 @@ const clientLogos = [
 const Clients = () => {
   return (
     <section>
-      <h2 className="section-label mb-4">
-        Clients
-      </h2>
-      <div className="flex flex-wrap gap-8 items-center mt-6">
+      <div className="px-5 sm:px-10 py-8 border-b border-dashed border-border-subtle">
+        <h2 className="section-label">
+          Clients
+        </h2>
+      </div>
+      <div className="grid grid-cols-2">
         {clientLogos.map((logo, index) => (
-          <img 
-            key={index}
-            src={logo}
-            alt={`Client ${index + 1}`}
-            className="h-10 w-auto opacity-50 hover:opacity-100 transition-opacity cursor-pointer grayscale brightness-0"
-          />
+          <div 
+            key={index} 
+            className={`
+              flex items-center justify-center p-8 sm:p-12 
+              border-dashed border-border-subtle
+              ${index % 2 === 0 ? 'border-r' : ''}
+              ${index < clientLogos.length - 2 ? 'border-b' : ''}
+              hover:bg-gray-50 transition-colors group
+            `}
+          >
+            <img 
+              src={logo}
+              alt={`Client ${index + 1}`}
+              className="w-full h-auto max-h-16 object-contain opacity-40 group-hover:opacity-100 transition-opacity grayscale brightness-0"
+            />
+          </div>
         ))}
       </div>
     </section>
